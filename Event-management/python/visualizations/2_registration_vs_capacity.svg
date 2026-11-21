@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 500" width="100%" height="100%" style="background:#0f172a; font-family:'Segoe UI', sans-serif;">
+  <text x="475" y="38" fill="#f8fafc" font-size="20" font-weight="bold" text-anchor="middle">EVENT CAPACITY VS. CONFIRMED REGISTRATIONS</text>
+  <text x="475" y="60" fill="#94a3b8" font-size="13" text-anchor="middle">Capacity Utilization &amp; Booking Ratios | Reg No: 31</text>
+
+  <!-- Legend -->
+  <g transform="translate(620, 45)">
+    <rect x="0" y="0" width="16" height="16" rx="3" fill="#38bdf8"/>
+    <text x="24" y="13" fill="#e2e8f0" font-size="12">Max Capacity</text>
+    <rect x="130" y="0" width="16" height="16" rx="3" fill="#818cf8"/>
+    <text x="154" y="13" fill="#e2e8f0" font-size="12">Confirmed</text>
+  </g>
+
+  <!-- Chart Area -->
+  <g transform="translate(180, 100)">
+    <!-- Y Axis Labels & Bars -->
+    <!-- Event 1: CYBERFEST 2026 -->
+    <text x="-15" y="25" fill="#e2e8f0" font-size="12" text-anchor="end">CYBERFEST 2026</text>
+    <rect x="0" y="8" width="550" height="12" rx="3" fill="#1e293b"/>
+    <rect x="0" y="8" width="280" height="12" rx="3" fill="#38bdf8"/>
+    <rect x="0" y="24" width="21" height="12" rx="3" fill="#818cf8"/>
+    <text x="290" y="19" fill="#94a3b8" font-size="11">Cap: 120</text>
+    <text x="30" y="35" fill="#c7d2fe" font-size="11" font-weight="bold">Reg: 9</text>
+
+    <!-- Event 2: Generative AI Workshop -->
+    <text x="-15" y="75" fill="#e2e8f0" font-size="12" text-anchor="end">GenAI &amp; LLMs Workshop</text>
+    <rect x="0" y="58" width="550" height="12" rx="3" fill="#1e293b"/>
+    <rect x="0" y="58" width="105" height="12" rx="3" fill="#38bdf8"/>
+    <rect x="0" y="74" width="14" height="12" rx="3" fill="#818cf8"/>
+    <text x="115" y="69" fill="#94a3b8" font-size="11">Cap: 45</text>
+    <text x="24" y="85" fill="#c7d2fe" font-size="11" font-weight="bold">Reg: 6</text>
+
+    <!-- Event 3: Cloud Seminar -->
+    <text x="-15" y="125" fill="#e2e8f0" font-size="12" text-anchor="end">Cloud &amp; Distributed Systems</text>
+    <rect x="0" y="108" width="550" height="12" rx="3" fill="#1e293b"/>
+    <rect x="0" y="108" width="140" height="12" rx="3" fill="#38bdf8"/>
+    <rect x="0" y="124" width="12" height="12" rx="3" fill="#818cf8"/>
+    <text x="150" y="119" fill="#94a3b8" font-size="11">Cap: 60</text>
+    <text x="22" y="135" fill="#c7d2fe" font-size="11" font-weight="bold">Reg: 5</text>
+
+    <!-- Event 4: VIBES Cultural -->
+    <text x="-15" y="175" fill="#e2e8f0" font-size="12" text-anchor="end">VIBES 2026 Cultural Fest</text>
+    <rect x="0" y="158" width="550" height="12" rx="3" fill="#1e293b"/>
+    <rect x="0" y="158" width="580" height="12" rx="3" fill="#38bdf8"/>
+    <rect x="0" y="174" width="21" height="12" rx="3" fill="#818cf8"/>
+    <text x="590" y="169" fill="#94a3b8" font-size="11">Cap: 250</text>
+    <text x="30" y="185" fill="#c7d2fe" font-size="11" font-weight="bold">Reg: 9</text>
+
+    <!-- Event 5: Embedded IoT -->
+    <text x="-15" y="225" fill="#e2e8f0" font-size="12" text-anchor="end">Embedded IoT &amp; Robotics</text>
+    <rect x="0" y="208" width="550" height="12" rx="3" fill="#1e293b"/>
+    <rect x="0" y="208" width="81" height="12" rx="3" fill="#38bdf8"/>
+    <rect x="0" y="224" width="9" height="12" rx="3" fill="#818cf8"/>
+    <text x="91" y="219" fill="#94a3b8" font-size="11">Cap: 35</text>
+    <text x="19" y="235" fill="#c7d2fe" font-size="11" font-weight="bold">Reg: 4</text>
+
+    <!-- Event 6: Deep Learning Bootcamp -->
+    <text x="-15" y="275" fill="#e2e8f0" font-size="12" text-anchor="end">Deep Learning Bootcamp</text>
+    <rect x="0" y="258" width="550" height="12" rx="3" fill="#1e293b"/>
+    <rect x="0" y="258" width="93" height="12" rx="3" fill="#38bdf8"/>
+    <rect x="0" y="274" width="12" height="12" rx="3" fill="#818cf8"/>
+    <text x="103" y="269" fill="#94a3b8" font-size="11">Cap: 40</text>
+    <text x="22" y="285" fill="#c7d2fe" font-size="11" font-weight="bold">Reg: 5</text>
+
+    <!-- Grid and X Axis -->
+    <line x1="0" y1="0" x2="0" y2="310" stroke="#475569" stroke-width="1.5"/>
+    <line x1="0" y1="310" x2="680" y2="310" stroke="#475569" stroke-width="1.5"/>
+    <text x="0" y="330" fill="#94a3b8" font-size="11">0</text>
+    <text x="116" y="330" fill="#94a3b8" font-size="11">50</text>
+    <text x="232" y="330" fill="#94a3b8" font-size="11">100</text>
+    <text x="348" y="330" fill="#94a3b8" font-size="11">150</text>
+    <text x="464" y="330" fill="#94a3b8" font-size="11">200</text>
+    <text x="580" y="330" fill="#94a3b8" font-size="11">250 Seats</text>
+  </g>
+</svg>

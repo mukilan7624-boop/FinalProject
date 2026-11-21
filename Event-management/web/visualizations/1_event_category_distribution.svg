@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 480" width="100%" height="100%" style="background:#0f172a; font-family:'Segoe UI', sans-serif;">
+  <!-- Title -->
+  <text x="475" y="38" fill="#f8fafc" font-size="20" font-weight="bold" text-anchor="middle">EVENT CATEGORY DISTRIBUTION</text>
+  <text x="475" y="60" fill="#94a3b8" font-size="13" text-anchor="middle">Course: 25ITC31 Foundations of Data Science | Reg No: 31 (25IT3A&amp;B)</text>
+
+  <!-- Left: Donut Chart -->
+  <g transform="translate(240, 260)">
+    <!-- Symposium 25% (90 deg) #38bdf8 -->
+    <!-- Path from (0, -120) to (120, 0) -->
+    <path d="M 0 -120 A 120 120 0 0 1 120 0 L 60 0 A 60 60 0 0 0 0 -60 Z" fill="#38bdf8"/>
+    <!-- Workshop 37.5% (135 deg) from (120, 0) to (-84.85, 84.85) #818cf8 -->
+    <path d="M 120 0 A 120 120 0 0 1 -84.85 84.85 L -42.42 42.42 A 60 60 0 0 0 60 0 Z" fill="#818cf8"/>
+    <!-- Cultural 25% (90 deg) from (-84.85, 84.85) to (-84.85, -84.85) #ec4899 -->
+    <path d="M -84.85 84.85 A 120 120 0 0 1 -84.85 -84.85 L -42.42 -42.42 A 60 60 0 0 0 -42.42 42.42 Z" fill="#ec4899"/>
+    <!-- Seminar 12.5% (45 deg) from (-84.85, -84.85) to (0, -120) #10b981 -->
+    <path d="M -84.85 -84.85 A 120 120 0 0 1 0 -120 L 0 -60 A 60 60 0 0 0 -42.42 -42.42 Z" fill="#10b981"/>
+
+    <circle cx="0" cy="0" r="58" fill="#0f172a"/>
+    <text x="0" y="-5" fill="#f8fafc" font-size="14" font-weight="bold" text-anchor="middle">8 Events</text>
+    <text x="0" y="16" fill="#94a3b8" font-size="11" text-anchor="middle">Total Tracked</text>
+  </g>
+
+  <!-- Right: Breakdown Bar Chart -->
+  <g transform="translate(520, 110)">
+    <rect x="0" y="0" width="380" height="320" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#f8fafc" font-size="15" font-weight="bold">Category Metrics Breakdown</text>
+
+    <!-- Workshop (3 events, 37.5%) -->
+    <text x="20" y="75" fill="#e2e8f0" font-size="13">Workshops (3)</text>
+    <text x="350" y="75" fill="#818cf8" font-size="13" font-weight="bold" text-anchor="end">37.5%</text>
+    <rect x="20" y="85" width="330" height="18" rx="4" fill="#334155"/>
+    <rect x="20" y="85" width="124" height="18" rx="4" fill="#818cf8"/>
+
+    <!-- Symposium (2 events, 25.0%) -->
+    <text x="20" y="135" fill="#e2e8f0" font-size="13">Symposiums (2)</text>
+    <text x="350" y="135" fill="#38bdf8" font-size="13" font-weight="bold" text-anchor="end">25.0%</text>
+    <rect x="20" y="145" width="330" height="18" rx="4" fill="#334155"/>
+    <rect x="20" y="145" width="82" height="18" rx="4" fill="#38bdf8"/>
+
+    <!-- Cultural (2 events, 25.0%) -->
+    <text x="20" y="195" fill="#e2e8f0" font-size="13">Cultural Fests (2)</text>
+    <text x="350" y="195" fill="#ec4899" font-size="13" font-weight="bold" text-anchor="end">25.0%</text>
+    <rect x="20" y="205" width="330" height="18" rx="4" fill="#334155"/>
+    <rect x="20" y="205" width="82" height="18" rx="4" fill="#ec4899"/>
+
+    <!-- Seminar (1 event, 12.5%) -->
+    <text x="20" y="255" fill="#e2e8f0" font-size="13">Seminars (1)</text>
+    <text x="350" y="255" fill="#10b981" font-size="13" font-weight="bold" text-anchor="end">12.5%</text>
+    <rect x="20" y="265" width="330" height="18" rx="4" fill="#334155"/>
+    <rect x="20" y="265" width="41" height="18" rx="4" fill="#10b981"/>
+  </g>
+</svg>

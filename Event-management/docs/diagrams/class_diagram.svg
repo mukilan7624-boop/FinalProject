@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%" style="background:#0f172a; font-family:'Fira Code', 'Consolas', monospace;">
+  <defs>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="35" fill="#f8fafc" font-size="22" font-weight="bold" font-family="'Segoe UI', sans-serif" text-anchor="middle">UML CLASS DIAGRAM</text>
+  <text x="500" y="60" fill="#94a3b8" font-size="13" font-family="'Segoe UI', sans-serif" text-anchor="middle">College Event Management System | Java OOP Architecture (Reg No: 31)</text>
+
+  <!-- Class: Event -->
+  <g transform="translate(40, 90)" filter="url(#boxShadow)">
+    <rect x="0" y="0" width="280" height="260" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="0" y="0" width="280" height="36" rx="6" fill="#0284c7"/>
+    <text x="140" y="24" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Event</text>
+    <line x1="0" y1="36" x2="280" y2="36" stroke="#38bdf8" stroke-width="1"/>
+    <!-- Attributes -->
+    <text x="12" y="58" fill="#e2e8f0" font-size="12">- eventId : int</text>
+    <text x="12" y="78" fill="#e2e8f0" font-size="12">- eventName : String</text>
+    <text x="12" y="98" fill="#e2e8f0" font-size="12">- category : String</text>
+    <text x="12" y="118" fill="#e2e8f0" font-size="12">- department : String</text>
+    <text x="12" y="138" fill="#e2e8f0" font-size="12">- maxCapacity : int</text>
+    <text x="12" y="158" fill="#e2e8f0" font-size="12">- currentRegistrations : int</text>
+    <line x1="0" y1="172" x2="280" y2="172" stroke="#475569" stroke-width="1"/>
+    <!-- Methods -->
+    <text x="12" y="194" fill="#a5f3fc" font-size="12">+ hasAvailableSeats() : boolean</text>
+    <text x="12" y="214" fill="#a5f3fc" font-size="12">+ incrementRegistration() : void</text>
+    <text x="12" y="234" fill="#a5f3fc" font-size="12">+ getUtilizationRate() : double</text>
+    <text x="12" y="254" fill="#a5f3fc" font-size="12">+ toString() : String</text>
+  </g>
+
+  <!-- Class: Student -->
+  <g transform="translate(680, 90)" filter="url(#boxShadow)">
+    <rect x="0" y="0" width="280" height="230" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="0" y="0" width="280" height="36" rx="6" fill="#0284c7"/>
+    <text x="140" y="24" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Student</text>
+    <line x1="0" y1="36" x2="280" y2="36" stroke="#38bdf8" stroke-width="1"/>
+    <!-- Attributes -->
+    <text x="12" y="58" fill="#e2e8f0" font-size="12">- studentId : int</text>
+    <text x="12" y="78" fill="#e2e8f0" font-size="12">- registerNo : String</text>
+    <text x="12" y="98" fill="#e2e8f0" font-size="12">- name : String</text>
+    <text x="12" y="118" fill="#e2e8f0" font-size="12">- department : String</text>
+    <text x="12" y="138" fill="#e2e8f0" font-size="12">- email : String</text>
+    <line x1="0" y1="152" x2="280" y2="152" stroke="#475569" stroke-width="1"/>
+    <!-- Methods -->
+    <text x="12" y="174" fill="#a5f3fc" font-size="12">+ getRegisterNo() : String</text>
+    <text x="12" y="194" fill="#a5f3fc" font-size="12">+ getName() : String</text>
+    <text x="12" y="214" fill="#a5f3fc" font-size="12">+ getDepartment() : String</text>
+  </g>
+
+  <!-- Class: Registration -->
+  <g transform="translate(360, 200)" filter="url(#boxShadow)">
+    <rect x="0" y="0" width="280" height="230" rx="6" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <rect x="0" y="0" width="280" height="36" rx="6" fill="#4f46e5"/>
+    <text x="140" y="24" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Registration</text>
+    <line x1="0" y1="36" x2="280" y2="36" stroke="#6366f1" stroke-width="1"/>
+    <!-- Attributes -->
+    <text x="12" y="58" fill="#e2e8f0" font-size="12">- registrationId : int</text>
+    <text x="12" y="78" fill="#e2e8f0" font-size="12">- eventId : int</text>
+    <text x="12" y="98" fill="#e2e8f0" font-size="12">- studentId : int</text>
+    <text x="12" y="118" fill="#e2e8f0" font-size="12">- registrationDate : Timestamp</text>
+    <text x="12" y="138" fill="#e2e8f0" font-size="12">- status : String</text>
+    <line x1="0" y1="152" x2="280" y2="152" stroke="#475569" stroke-width="1"/>
+    <!-- Methods -->
+    <text x="12" y="174" fill="#c7d2fe" font-size="12">+ getRegistrationId() : int</text>
+    <text x="12" y="194" fill="#c7d2fe" font-size="12">+ getStatus() : String</text>
+    <text x="12" y="214" fill="#c7d2fe" font-size="12">+ cancel() : void</text>
+  </g>
+
+  <!-- Class: Attendance -->
+  <g transform="translate(180, 480)" filter="url(#boxShadow)">
+    <rect x="0" y="0" width="280" height="190" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="280" height="36" rx="6" fill="#059669"/>
+    <text x="140" y="24" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Attendance</text>
+    <line x1="0" y1="36" x2="280" y2="36" stroke="#10b981" stroke-width="1"/>
+    <!-- Attributes -->
+    <text x="12" y="58" fill="#e2e8f0" font-size="12">- attendanceId : int</text>
+    <text x="12" y="78" fill="#e2e8f0" font-size="12">- registrationId : int</text>
+    <text x="12" y="98" fill="#e2e8f0" font-size="12">- status : String (PRESENT/ABSENT)</text>
+    <text x="12" y="118" fill="#e2e8f0" font-size="12">- markedAt : Timestamp</text>
+    <line x1="0" y1="132" x2="280" y2="132" stroke="#475569" stroke-width="1"/>
+    <!-- Methods -->
+    <text x="12" y="154" fill="#a7f3d0" font-size="12">+ isPresent() : boolean</text>
+    <text x="12" y="174" fill="#a7f3d0" font-size="12">+ markStatus(status) : void</text>
+  </g>
+
+  <!-- Class: Feedback -->
+  <g transform="translate(540, 480)" filter="url(#boxShadow)">
+    <rect x="0" y="0" width="280" height="190" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="0" y="0" width="280" height="36" rx="6" fill="#d97706"/>
+    <text x="140" y="24" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Feedback</text>
+    <line x1="0" y1="36" x2="280" y2="36" stroke="#f59e0b" stroke-width="1"/>
+    <!-- Attributes -->
+    <text x="12" y="58" fill="#e2e8f0" font-size="12">- feedbackId : int</text>
+    <text x="12" y="78" fill="#e2e8f0" font-size="12">- registrationId : int</text>
+    <text x="12" y="98" fill="#e2e8f0" font-size="12">- rating : int (1 to 5)</text>
+    <text x="12" y="118" fill="#e2e8f0" font-size="12">- comments : String</text>
+    <line x1="0" y1="132" x2="280" y2="132" stroke="#475569" stroke-width="1"/>
+    <!-- Methods -->
+    <text x="12" y="154" fill="#fde68a" font-size="12">+ getRating() : int</text>
+    <text x="12" y="174" fill="#fde68a" font-size="12">+ getComments() : String</text>
+  </g>
+
+  <!-- Relationships Lines -->
+  <!-- Event to Registration -->
+  <line x1="320" y1="230" x2="360" y2="250" stroke="#38bdf8" stroke-width="2"/>
+  <text x="325" y="222" fill="#38bdf8" font-size="11">1</text>
+  <text x="348" y="242" fill="#6366f1" font-size="11">0..*</text>
+
+  <!-- Student to Registration -->
+  <line x1="680" y1="230" x2="640" y2="250" stroke="#38bdf8" stroke-width="2"/>
+  <text x="670" y="222" fill="#38bdf8" font-size="11">1</text>
+  <text x="645" y="242" fill="#6366f1" font-size="11">0..*</text>
+
+  <!-- Registration to Attendance -->
+  <line x1="430" y1="430" x2="340" y2="480" stroke="#10b981" stroke-width="2"/>
+  <text x="435" y="445" fill="#6366f1" font-size="11">1</text>
+  <text x="345" y="475" fill="#10b981" font-size="11">0..1</text>
+
+  <!-- Registration to Feedback -->
+  <line x1="570" y1="430" x2="660" y2="480" stroke="#f59e0b" stroke-width="2"/>
+  <text x="560" y="445" fill="#6366f1" font-size="11">1</text>
+  <text x="650" y="475" fill="#f59e0b" font-size="11">0..1</text>
+</svg>

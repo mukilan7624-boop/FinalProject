@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 560" width="100%" height="100%" style="background:#0f172a; font-family:'Segoe UI', sans-serif;">
+  <defs>
+    <filter id="cfgShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="cfgArrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="errArrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <text x="475" y="38" fill="#f8fafc" font-size="20" font-weight="bold" text-anchor="middle">CONTROL FLOW GRAPH (WHITE-BOX BASIS PATH TESTING)</text>
+  <text x="475" y="60" fill="#94a3b8" font-size="13" text-anchor="middle">Unit 4: Cyclomatic Complexity &amp; Basis Paths for validateRegistration() | Reg No: 31</text>
+
+  <!-- Left: Control Flow Graph -->
+  <g transform="translate(100, 90)">
+    <!-- Node 1: Entry / Event Exists? -->
+    <circle cx="150" cy="30" r="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" filter="url(#cfgShadow)"/>
+    <text x="150" y="36" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">1</text>
+    <text x="60" y="35" fill="#38bdf8" font-size="11" font-weight="bold" text-anchor="end">Event Exists?</text>
+
+    <!-- Node 2: Throw EventNotFoundException -->
+    <circle cx="330" cy="30" r="20" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <text x="330" y="35" fill="#fca5a5" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+    <text x="360" y="35" fill="#f87171" font-size="11">Throw EventNotFound</text>
+
+    <line x1="172" y1="30" x2="308" y2="30" stroke="#ef4444" stroke-width="2" marker-end="url(#errArrow)"/>
+    <text x="240" y="24" fill="#f87171" font-size="10">False</text>
+
+    <!-- Node 3: Seat Available? -->
+    <circle cx="150" cy="130" r="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" filter="url(#cfgShadow)"/>
+    <text x="150" y="136" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">3</text>
+    <text x="60" y="135" fill="#38bdf8" font-size="11" font-weight="bold" text-anchor="end">Has Seats?</text>
+
+    <line x1="150" y1="52" x2="150" y2="106" stroke="#38bdf8" stroke-width="2" marker-end="url(#cfgArrow)"/>
+    <text x="158" y="85" fill="#38bdf8" font-size="10">True</text>
+
+    <!-- Node 4: Throw EventFullException -->
+    <circle cx="330" cy="130" r="20" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <text x="330" y="135" fill="#fca5a5" font-size="12" font-weight="bold" text-anchor="middle">4</text>
+    <text x="360" y="135" fill="#f87171" font-size="11">Throw EventFull</text>
+
+    <line x1="172" y1="130" x2="308" y2="130" stroke="#ef4444" stroke-width="2" marker-end="url(#errArrow)"/>
+    <text x="240" y="124" fill="#f87171" font-size="10">False</text>
+
+    <!-- Node 5: Duplicate Check -->
+    <circle cx="150" cy="230" r="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" filter="url(#cfgShadow)"/>
+    <text x="150" y="236" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">5</text>
+    <text x="60" y="235" fill="#38bdf8" font-size="11" font-weight="bold" text-anchor="end">Already Reg?</text>
+
+    <line x1="150" y1="152" x2="150" y2="206" stroke="#38bdf8" stroke-width="2" marker-end="url(#cfgArrow)"/>
+    <text x="158" y="185" fill="#38bdf8" font-size="10">True</text>
+
+    <!-- Node 6: Throw DuplicateException -->
+    <circle cx="330" cy="230" r="20" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+    <text x="330" y="235" fill="#fca5a5" font-size="12" font-weight="bold" text-anchor="middle">6</text>
+    <text x="360" y="235" fill="#f87171" font-size="11">Throw DuplicateReg</text>
+
+    <line x1="172" y1="230" x2="308" y2="230" stroke="#ef4444" stroke-width="2" marker-end="url(#errArrow)"/>
+    <text x="240" y="224" fill="#f87171" font-size="10">True</text>
+
+    <!-- Node 7: Insert Registration & Increment Count -->
+    <circle cx="150" cy="330" r="22" fill="#1e293b" stroke="#10b981" stroke-width="2.5" filter="url(#cfgShadow)"/>
+    <text x="150" y="336" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">7</text>
+    <text x="60" y="335" fill="#10b981" font-size="11" font-weight="bold" text-anchor="end">Confirm &amp; Save</text>
+
+    <line x1="150" y1="252" x2="150" y2="306" stroke="#10b981" stroke-width="2" marker-end="url(#cfgArrow)"/>
+    <text x="158" y="285" fill="#10b981" font-size="10">False</text>
+
+    <!-- Node 8: Method Return / Exit -->
+    <circle cx="240" cy="420" r="24" fill="#065f46" stroke="#34d399" stroke-width="2.5" filter="url(#cfgShadow)"/>
+    <text x="240" y="426" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">8</text>
+    <text x="240" y="455" fill="#34d399" font-size="11" font-weight="bold" text-anchor="middle">Exit / Return</text>
+
+    <!-- Edges to Exit -->
+    <line x1="150" y1="352" x2="222" y2="408" stroke="#10b981" stroke-width="2" marker-end="url(#cfgArrow)"/>
+    <line x1="330" y1="50" x2="330" y2="390" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <line x1="330" y1="390" x2="260" y2="415" stroke="#ef4444" stroke-width="1.5" marker-end="url(#errArrow)"/>
+  </g>
+
+  <!-- Right: Mathematical Calculation Box -->
+  <g transform="translate(560, 90)">
+    <rect x="0" y="0" width="350" height="420" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2" filter="url(#cfgShadow)"/>
+    <text x="20" y="32" fill="#38bdf8" font-size="15" font-weight="bold">Cyclomatic Complexity V(G)</text>
+
+    <text x="20" y="70" fill="#e2e8f0" font-size="13">• Nodes (N) = 8</text>
+    <text x="20" y="95" fill="#e2e8f0" font-size="13">• Edges (E) = 10</text>
+    <text x="20" y="120" fill="#e2e8f0" font-size="13">• Predicate Nodes (P) = 3 (Nodes 1, 3, 5)</text>
+
+    <line x1="20" y1="135" x2="330" y2="135" stroke="#334155"/>
+
+    <text x="20" y="160" fill="#facc15" font-size="13" font-weight="bold">Formula 1: V(G) = E - N + 2P</text>
+    <text x="35" y="185" fill="#fef08a" font-size="12">V(G) = 10 - 8 + 2(1) = 4</text>
+
+    <text x="20" y="220" fill="#facc15" font-size="13" font-weight="bold">Formula 2: V(G) = P + 1</text>
+    <text x="35" y="245" fill="#fef08a" font-size="12">V(G) = 3 + 1 = 4</text>
+
+    <line x1="20" y1="260" x2="330" y2="260" stroke="#334155"/>
+
+    <text x="20" y="285" fill="#38bdf8" font-size="13" font-weight="bold">4 Independent Basis Paths:</text>
+    <text x="25" y="310" fill="#e2e8f0" font-size="11"><tspan fill="#38bdf8" font-weight="bold">Path 1:</tspan> 1 &rarr; 2 &rarr; 8 (Event Not Found)</text>
+    <text x="25" y="335" fill="#e2e8f0" font-size="11"><tspan fill="#38bdf8" font-weight="bold">Path 2:</tspan> 1 &rarr; 3 &rarr; 4 &rarr; 8 (Event Full / No Seats)</text>
+    <text x="25" y="360" fill="#e2e8f0" font-size="11"><tspan fill="#38bdf8" font-weight="bold">Path 3:</tspan> 1 &rarr; 3 &rarr; 5 &rarr; 6 &rarr; 8 (Duplicate Reg)</text>
+    <text x="25" y="385" fill="#e2e8f0" font-size="11"><tspan fill="#10b981" font-weight="bold">Path 4:</tspan> 1 &rarr; 3 &rarr; 5 &rarr; 7 &rarr; 8 (Successful Registration)</text>
+  </g>
+</svg>

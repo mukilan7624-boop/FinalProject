@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="100%" height="100%" style="background:#0f172a; font-family:'Segoe UI', sans-serif;">
+  <defs>
+    <filter id="erShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="35" fill="#f8fafc" font-size="22" font-weight="bold" text-anchor="middle">ENTITY-RELATIONSHIP (ER) DIAGRAM</text>
+  <text x="480" y="58" fill="#94a3b8" font-size="13" text-anchor="middle">College Event Management Database Schema (Reg No: 31)</text>
+
+  <!-- Entity: EVENT -->
+  <g transform="translate(40, 90)" filter="url(#erShadow)">
+    <rect x="0" y="0" width="240" height="220" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="0" y="0" width="240" height="32" rx="6" fill="#0284c7"/>
+    <text x="120" y="22" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">EVENT</text>
+    <text x="15" y="55" fill="#facc15" font-size="12">PK  event_id (INT)</text>
+    <text x="15" y="78" fill="#e2e8f0" font-size="12">    event_name (VARCHAR)</text>
+    <text x="15" y="101" fill="#e2e8f0" font-size="12">    category (VARCHAR)</text>
+    <text x="15" y="124" fill="#e2e8f0" font-size="12">    department (VARCHAR)</text>
+    <text x="15" y="147" fill="#e2e8f0" font-size="12">    event_date (DATE)</text>
+    <text x="15" y="170" fill="#e2e8f0" font-size="12">    venue (VARCHAR)</text>
+    <text x="15" y="193" fill="#e2e8f0" font-size="12">    max_capacity (INT)</text>
+  </g>
+
+  <!-- Entity: STUDENT -->
+  <g transform="translate(680, 90)" filter="url(#erShadow)">
+    <rect x="0" y="0" width="240" height="200" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="0" y="0" width="240" height="32" rx="6" fill="#0284c7"/>
+    <text x="120" y="22" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">STUDENT</text>
+    <text x="15" y="55" fill="#facc15" font-size="12">PK  student_id (INT)</text>
+    <text x="15" y="78" fill="#f43f5e" font-size="12">UQ  register_no (VARCHAR)</text>
+    <text x="15" y="101" fill="#e2e8f0" font-size="12">    name (VARCHAR)</text>
+    <text x="15" y="124" fill="#e2e8f0" font-size="12">    department (VARCHAR)</text>
+    <text x="15" y="147" fill="#f43f5e" font-size="12">UQ  email (VARCHAR)</text>
+    <text x="15" y="170" fill="#e2e8f0" font-size="12">    contact_number (VARCHAR)</text>
+  </g>
+
+  <!-- Entity: REGISTRATION (Center) -->
+  <g transform="translate(360, 180)" filter="url(#erShadow)">
+    <rect x="0" y="0" width="240" height="180" rx="6" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <rect x="0" y="0" width="240" height="32" rx="6" fill="#4f46e5"/>
+    <text x="120" y="22" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">REGISTRATION</text>
+    <text x="15" y="55" fill="#facc15" font-size="12">PK  registration_id (INT)</text>
+    <text x="15" y="78" fill="#67e8f9" font-size="12">FK  event_id (INT)</text>
+    <text x="15" y="101" fill="#67e8f9" font-size="12">FK  student_id (INT)</text>
+    <text x="15" y="124" fill="#e2e8f0" font-size="12">    registration_date (DATETIME)</text>
+    <text x="15" y="147" fill="#e2e8f0" font-size="12">    status (VARCHAR)</text>
+    <text x="15" y="168" fill="#a78bfa" font-size="10">UQ(event_id, student_id)</text>
+  </g>
+
+  <!-- Entity: ATTENDANCE (Bottom Left) -->
+  <g transform="translate(180, 430)" filter="url(#erShadow)">
+    <rect x="0" y="0" width="240" height="150" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="240" height="32" rx="6" fill="#059669"/>
+    <text x="120" y="22" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">ATTENDANCE</text>
+    <text x="15" y="55" fill="#facc15" font-size="12">PK  attendance_id (INT)</text>
+    <text x="15" y="78" fill="#67e8f9" font-size="12">FK  registration_id (INT, UQ)</text>
+    <text x="15" y="101" fill="#e2e8f0" font-size="12">    status (PRESENT/ABSENT)</text>
+    <text x="15" y="124" fill="#e2e8f0" font-size="12">    marked_at (TIMESTAMP)</text>
+  </g>
+
+  <!-- Entity: FEEDBACK (Bottom Right) -->
+  <g transform="translate(540, 430)" filter="url(#erShadow)">
+    <rect x="0" y="0" width="240" height="160" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="0" y="0" width="240" height="32" rx="6" fill="#d97706"/>
+    <text x="120" y="22" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">FEEDBACK</text>
+    <text x="15" y="55" fill="#facc15" font-size="12">PK  feedback_id (INT)</text>
+    <text x="15" y="78" fill="#67e8f9" font-size="12">FK  registration_id (INT, UQ)</text>
+    <text x="15" y="101" fill="#e2e8f0" font-size="12">    rating (INT 1-5)</text>
+    <text x="15" y="124" fill="#e2e8f0" font-size="12">    comments (TEXT)</text>
+    <text x="15" y="147" fill="#e2e8f0" font-size="12">    submitted_at (TIMESTAMP)</text>
+  </g>
+
+  <!-- Lines with Cardinalities -->
+  <!-- EVENT to REGISTRATION (1 to N) -->
+  <line x1="280" y1="200" x2="360" y2="240" stroke="#38bdf8" stroke-width="2"/>
+  <text x="290" y="195" fill="#38bdf8" font-size="12" font-weight="bold">1</text>
+  <text x="345" y="235" fill="#6366f1" font-size="12" font-weight="bold">N</text>
+
+  <!-- STUDENT to REGISTRATION (1 to N) -->
+  <line x1="680" y1="200" x2="600" y2="240" stroke="#38bdf8" stroke-width="2"/>
+  <text x="665" y="195" fill="#38bdf8" font-size="12" font-weight="bold">1</text>
+  <text x="615" y="235" fill="#6366f1" font-size="12" font-weight="bold">N</text>
+
+  <!-- REGISTRATION to ATTENDANCE (1 to 1) -->
+  <line x1="430" y1="360" x2="330" y2="430" stroke="#10b981" stroke-width="2"/>
+  <text x="415" y="380" fill="#6366f1" font-size="12" font-weight="bold">1</text>
+  <text x="340" y="420" fill="#10b981" font-size="12" font-weight="bold">1</text>
+
+  <!-- REGISTRATION to FEEDBACK (1 to 1) -->
+  <line x1="530" y1="360" x2="630" y2="430" stroke="#f59e0b" stroke-width="2"/>
+  <text x="545" y="380" fill="#6366f1" font-size="12" font-weight="bold">1</text>
+  <text x="620" y="420" fill="#f59e0b" font-size="12" font-weight="bold">1</text>
+</svg>
