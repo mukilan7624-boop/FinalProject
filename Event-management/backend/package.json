@@ -1,0 +1,17 @@
+{
+  "name": "college-event-management-backend",
+  "version": "1.0.0",
+  "description": "Full-Stack REST API Backend for College Event Management System (Reg No: 31)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "keywords": ["event-management", "college-project", "sqlite", "express", "rest-api"],
+  "author": "Madhavan S (Reg No: 31)",
+  "license": "MIT"
+}

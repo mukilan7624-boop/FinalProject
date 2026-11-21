@@ -1,0 +1,523 @@
+﻿{
+    "students":  [
+                     {
+                         "id":  1,
+                         "registerNo":  "25IT031",
+                         "name":  "Madhavan S (Reg 31)",
+                         "dept":  "Information Technology",
+                         "email":  "madhavan.25it031@velalarengg.ac.in",
+                         "phone":  "9842100031"
+                     },
+                     {
+                         "id":  2,
+                         "registerNo":  "25IT001",
+                         "name":  "Aarav Kumar",
+                         "dept":  "Information Technology",
+                         "email":  "aarav.25it001@velalarengg.ac.in",
+                         "phone":  "9842100001"
+                     },
+                     {
+                         "id":  3,
+                         "registerNo":  "25IT061",
+                         "name":  "Dharani R",
+                         "dept":  "Information Technology",
+                         "email":  "dharani.25it061@velalarengg.ac.in",
+                         "phone":  "9842100061"
+                     },
+                     {
+                         "id":  4,
+                         "registerNo":  "25IT091",
+                         "name":  "Kavya S",
+                         "dept":  "Information Technology",
+                         "email":  "kavya.25it091@velalarengg.ac.in",
+                         "phone":  "9842100091"
+                     },
+                     {
+                         "id":  5,
+                         "registerNo":  "25ITL01",
+                         "name":  "Naveen Prashanth L",
+                         "dept":  "Information Technology",
+                         "email":  "naveen.25itl01@velalarengg.ac.in",
+                         "phone":  "9842100099"
+                     },
+                     {
+                         "id":  6,
+                         "registerNo":  "25CS012",
+                         "name":  "Bala Subramanian",
+                         "dept":  "Computer Science and Engg",
+                         "email":  "bala.25cs012@velalarengg.ac.in",
+                         "phone":  "9842100012"
+                     },
+                     {
+                         "id":  7,
+                         "registerNo":  "25CS045",
+                         "name":  "Gokul Nathan",
+                         "dept":  "Computer Science and Engg",
+                         "email":  "gokul.25cs045@velalarengg.ac.in",
+                         "phone":  "9842100045"
+                     },
+                     {
+                         "id":  8,
+                         "registerNo":  "25EC018",
+                         "name":  "Harish V",
+                         "dept":  "Electronics and Comm Engg",
+                         "email":  "harish.25ec018@velalarengg.ac.in",
+                         "phone":  "9842100018"
+                     },
+                     {
+                         "id":  9,
+                         "registerNo":  "25EC052",
+                         "name":  "Janani M",
+                         "dept":  "Electronics and Comm Engg",
+                         "email":  "janani.25ec052@velalarengg.ac.in",
+                         "phone":  "9842100052"
+                     },
+                     {
+                         "id":  10,
+                         "registerNo":  "25AI022",
+                         "name":  "Manoj Kumar",
+                         "dept":  "Artificial Intelligence \u0026 DS",
+                         "email":  "manoj.25ai022@velalarengg.ac.in",
+                         "phone":  "9842100022"
+                     },
+                     {
+                         "id":  11,
+                         "registerNo":  "25AI049",
+                         "name":  "Pavithra K",
+                         "dept":  "Artificial Intelligence \u0026 DS",
+                         "email":  "pavithra.25ai049@velalarengg.ac.in",
+                         "phone":  "9842100049"
+                     },
+                     {
+                         "id":  12,
+                         "registerNo":  "25ME015",
+                         "name":  "Karthik Raja",
+                         "dept":  "Mechanical Engineering",
+                         "email":  "karthik.25me015@velalarengg.ac.in",
+                         "phone":  "9842100015"
+                     }
+                 ],
+    "events":  [
+                   {
+                       "id":  1,
+                       "name":  "CYBERFEST 2026: National Tech Symposium",
+                       "cat":  "Symposium",
+                       "dept":  "Information Technology",
+                       "date":  "2026-12-05",
+                       "venue":  "Main Auditorium",
+                       "cap":  120,
+                       "reg":  8
+                   },
+                   {
+                       "id":  2,
+                       "name":  "Hands-on Workshop on Generative AI \u0026 LLMs",
+                       "cat":  "Workshop",
+                       "dept":  "Information Technology",
+                       "date":  "2026-12-12",
+                       "venue":  "IT Computing Lab 3",
+                       "cap":  45,
+                       "reg":  6
+                   },
+                   {
+                       "id":  3,
+                       "name":  "National Seminar on Cloud \u0026 Distributed Systems",
+                       "cat":  "Seminar",
+                       "dept":  "Computer Science and Engg",
+                       "date":  "2026-12-18",
+                       "venue":  "Seminar Hall 1",
+                       "cap":  60,
+                       "reg":  4
+                   },
+                   {
+                       "id":  4,
+                       "name":  "VIBES 2026: Annual Inter-College Cultural Fest",
+                       "cat":  "Cultural",
+                       "dept":  "Student Affairs",
+                       "date":  "2026-12-24",
+                       "venue":  "Open Air Amphitheatre",
+                       "cap":  250,
+                       "reg":  8
+                   },
+                   {
+                       "id":  5,
+                       "name":  "Embedded IoT \u0026 Robotics Workshop",
+                       "cat":  "Workshop",
+                       "dept":  "Electronics and Comm Engg",
+                       "date":  "2027-01-08",
+                       "venue":  "IoT Research Lab",
+                       "cap":  35,
+                       "reg":  4
+                   },
+                   {
+                       "id":  6,
+                       "name":  "Deep Learning Bootcamp for Computer Vision",
+                       "cat":  "Workshop",
+                       "dept":  "Artificial Intelligence \u0026 DS",
+                       "date":  "2027-01-15",
+                       "venue":  "AI Innovation Lab",
+                       "cap":  40,
+                       "reg":  4
+                   },
+                   {
+                       "id":  7,
+                       "name":  "TechConclave 2027: Paper Presentation",
+                       "cat":  "Symposium",
+                       "dept":  "Information Technology",
+                       "date":  "2027-01-22",
+                       "venue":  "Conference Hall 2",
+                       "cap":  50,
+                       "reg":  0
+                   },
+                   {
+                       "id":  8,
+                       "name":  "Rhythm \u0026 Beats: Music and Fine Arts Evening",
+                       "cat":  "Cultural",
+                       "dept":  "Cultural Club",
+                       "date":  "2027-01-29",
+                       "venue":  "College Ground Stage",
+                       "cap":  300,
+                       "reg":  0
+                   },
+                   {
+                       "id":  9,
+                       "name":  "Hands-on Workshop on Generative AI \u0026 LLMs",
+                       "cat":  "Workshop",
+                       "dept":  "information technology",
+                       "date":  "2027-02-15",
+                       "venue":  "IT Conference Hall 1",
+                       "cap":  60,
+                       "reg":  1
+                   },
+                   {
+                       "id":  10,
+                       "name":  "Hands-on Workshop on Generative AI \u0026 LLMs",
+                       "cat":  "Workshop",
+                       "dept":  "Information Technology",
+                       "date":  "2027-02-15",
+                       "venue":  "IT Conference Hall 1",
+                       "cap":  59,
+                       "reg":  0
+                   }
+               ],
+    "registrations":  [
+                          {
+                              "id":  2,
+                              "eventId":  1,
+                              "studentId":  2,
+                              "date":  "2026-11-20 09:35:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  3,
+                              "eventId":  1,
+                              "studentId":  3,
+                              "date":  "2026-11-20 09:40:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  4,
+                              "eventId":  1,
+                              "studentId":  4,
+                              "date":  "2026-11-20 10:00:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  5,
+                              "eventId":  1,
+                              "studentId":  5,
+                              "date":  "2026-11-20 10:15:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  6,
+                              "eventId":  1,
+                              "studentId":  6,
+                              "date":  "2026-11-20 10:20:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  7,
+                              "eventId":  1,
+                              "studentId":  7,
+                              "date":  "2026-11-20 10:30:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  8,
+                              "eventId":  1,
+                              "studentId":  8,
+                              "date":  "2026-11-20 11:00:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  9,
+                              "eventId":  1,
+                              "studentId":  10,
+                              "date":  "2026-11-20 11:15:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  11,
+                              "eventId":  2,
+                              "studentId":  2,
+                              "date":  "2026-11-21 08:45:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  12,
+                              "eventId":  2,
+                              "studentId":  6,
+                              "date":  "2026-11-21 09:00:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  13,
+                              "eventId":  2,
+                              "studentId":  7,
+                              "date":  "2026-11-21 09:10:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  14,
+                              "eventId":  2,
+                              "studentId":  10,
+                              "date":  "2026-11-21 09:20:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  15,
+                              "eventId":  2,
+                              "studentId":  11,
+                              "date":  "2026-11-21 09:30:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  17,
+                              "eventId":  3,
+                              "studentId":  3,
+                              "date":  "2026-11-22 14:10:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  18,
+                              "eventId":  3,
+                              "studentId":  4,
+                              "date":  "2026-11-22 14:25:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  19,
+                              "eventId":  3,
+                              "studentId":  6,
+                              "date":  "2026-11-22 14:30:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  20,
+                              "eventId":  3,
+                              "studentId":  12,
+                              "date":  "2026-11-22 14:40:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  22,
+                              "eventId":  4,
+                              "studentId":  2,
+                              "date":  "2026-11-23 10:05:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  23,
+                              "eventId":  4,
+                              "studentId":  3,
+                              "date":  "2026-11-23 10:10:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  24,
+                              "eventId":  4,
+                              "studentId":  4,
+                              "date":  "2026-11-23 10:15:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  25,
+                              "eventId":  4,
+                              "studentId":  5,
+                              "date":  "2026-11-23 10:20:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  26,
+                              "eventId":  4,
+                              "studentId":  8,
+                              "date":  "2026-11-23 10:30:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  27,
+                              "eventId":  4,
+                              "studentId":  9,
+                              "date":  "2026-11-23 10:45:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  28,
+                              "eventId":  4,
+                              "studentId":  11,
+                              "date":  "2026-11-23 11:00:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  29,
+                              "eventId":  4,
+                              "studentId":  12,
+                              "date":  "2026-11-23 11:30:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  30,
+                              "eventId":  5,
+                              "studentId":  8,
+                              "date":  "2026-11-24 09:00:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  31,
+                              "eventId":  5,
+                              "studentId":  9,
+                              "date":  "2026-11-24 09:15:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  32,
+                              "eventId":  5,
+                              "studentId":  12,
+                              "date":  "2026-11-24 09:30:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  34,
+                              "eventId":  6,
+                              "studentId":  6,
+                              "date":  "2026-11-25 15:10:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  35,
+                              "eventId":  6,
+                              "studentId":  7,
+                              "date":  "2026-11-25 15:20:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  36,
+                              "eventId":  6,
+                              "studentId":  10,
+                              "date":  "2026-11-25 15:30:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  37,
+                              "eventId":  6,
+                              "studentId":  11,
+                              "date":  "2026-11-25 15:45:00",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  38,
+                              "eventId":  5,
+                              "studentId":  1,
+                              "date":  "2026-11-19 14:48:37",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  39,
+                              "eventId":  9,
+                              "studentId":  1,
+                              "date":  "2026-11-19 14:51:45",
+                              "status":  "CONFIRMED"
+                          },
+                          {
+                              "id":  40,
+                              "eventId":  2,
+                              "studentId":  1,
+                              "date":  "2026-11-19 14:53:46",
+                              "status":  "CONFIRMED"
+                          }
+                      ],
+    "attendance":  [
+                       {
+                           "registrationId":  1,
+                           "status":  "PRESENT",
+                           "markedAt":  "2026-12-05 09:00:00"
+                       },
+                       {
+                           "registrationId":  2,
+                           "status":  "PRESENT",
+                           "markedAt":  "2026-12-05 09:02:00"
+                       },
+                       {
+                           "registrationId":  3,
+                           "status":  "PRESENT",
+                           "markedAt":  "2026-12-05 09:05:00"
+                       },
+                       {
+                           "registrationId":  4,
+                           "status":  "ABSENT",
+                           "markedAt":  "2026-12-05 09:30:00"
+                       },
+                       {
+                           "registrationId":  10,
+                           "status":  "PRESENT",
+                           "markedAt":  "2026-12-12 08:45:00"
+                       },
+                       {
+                           "registrationId":  16,
+                           "status":  "PRESENT",
+                           "markedAt":  "2026-12-18 13:50:00"
+                       },
+                       {
+                           "registrationId":  21,
+                           "status":  "PRESENT",
+                           "markedAt":  "2026-12-24 09:45:00"
+                       },
+                       {
+                           "registrationId":  33,
+                           "status":  "PRESENT",
+                           "markedAt":  "2027-01-15 14:50:00"
+                       }
+                   ],
+    "feedback":  [
+                     {
+                         "registrationId":  1,
+                         "rating":  5,
+                         "comments":  "Outstanding national symposium! Coding hackathon was top notch."
+                     },
+                     {
+                         "registrationId":  2,
+                         "rating":  4,
+                         "comments":  "Great technical talks and paper presentations."
+                     },
+                     {
+                         "registrationId":  10,
+                         "rating":  5,
+                         "comments":  "Superb hands-on experience on LangChain and LLMs."
+                     },
+                     {
+                         "registrationId":  16,
+                         "rating":  4,
+                         "comments":  "Great overview of AWS Cloud and Kubernetes."
+                     },
+                     {
+                         "registrationId":  21,
+                         "rating":  5,
+                         "comments":  "Energetic cultural fest! Fantastic dance performances."
+                     },
+                     {
+                         "registrationId":  33,
+                         "rating":  5,
+                         "comments":  "Exceptional deep learning session on YOLO and transformers."
+                     }
+                 ]
+}

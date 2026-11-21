@@ -1,0 +1,169 @@
+=======================================================================================
+             VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY, ERODE - 12                
+                         DEPARTMENT OF INFORMATION TECHNOLOGY                          
+          COLLEGE EVENT MANAGEMENT AND PARTICIPATION ANALYSIS SYSTEM (REG: 31)         
+=======================================================================================
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 1: VIEWING ALL AVAILABLE EVENTS
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 1
+
+[OUTPUT]
+--- AVAILABLE COLLEGE EVENTS ---
+[1] CYBERFEST 2026: National Tech Symposium | Symposium  | Information Techno | Date: 2026-12-05 | Seats: 9/120 (7.5%)
+[2] Hands-on Workshop on Generative AI & LLMs | Workshop   | Information Techno | Date: 2026-12-12 | Seats: 6/45 (13.3%)
+[3] National Seminar on Cloud & Distributed Systems | Seminar    | Computer Science a | Date: 2026-12-18 | Seats: 5/60 (8.3%)
+[4] VIBES 2026: Annual Cultural Fest       | Cultural   | Student Affairs    | Date: 2026-12-24 | Seats: 9/250 (3.6%)
+[5] Embedded IoT & Robotics Workshop       | Workshop   | Electronics and Co | Date: 2027-01-08 | Seats: 3/35 (8.6%)
+[6] Deep Learning Bootcamp for Computer Vision | Workshop   | Artificial Intelli | Date: 2027-01-15 | Seats: 5/40 (12.5%)
+[7] TechConclave 2027: Paper Presentation  | Symposium  | Information Techno | Date: 2027-01-22 | Seats: 0/50 (0.0%)
+[8] Rhythm & Beats: Music and Fine Arts Evening | Cultural   | Cultural Club      | Date: 2027-01-29 | Seats: 0/300 (0.0%)
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 2: [ADMIN] CREATING A NEW EVENT
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 2
+Enter Event Name: Advanced Quantum Computing Seminar
+Enter Category (Symposium / Workshop / Seminar / Cultural): Seminar
+Enter Organizing Department: Information Technology
+Enter Event Date (YYYY-MM-DD): 2027-02-15
+Enter Venue: IT Seminar Hall 2
+Enter Maximum Seat Capacity: 75
+
+[OUTPUT]
+[+] Successfully created Event 'Advanced Quantum Computing Seminar' with ID: 11 and Capacity: 75
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 3: [STUDENT] SUCCESSFUL REGISTRATION
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 5
+Enter Event ID: 5
+Enter Student ID: 1
+
+[OUTPUT]
+[+] REGISTRATION CONFIRMED!
+    RegID: 41   | EventID: 5   (Embedded IoT & Robotics Workshop) | StudentID: 1   (25IT031) | Status: CONFIRMED | Date: 2026-11-26 10:14:22
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 4: [NEGATIVE TEST] DUPLICATE REGISTRATION PREVENTION
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 5
+Enter Event ID: 5
+Enter Student ID: 1
+
+[OUTPUT]
+[X] REGISTRATION REJECTED: Registration Failed: Student ID [1] is already registered for Event ID [5]. Duplicate registrations are prohibited.
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 5: [NEGATIVE TEST] CAPACITY LIMIT ENFORCEMENT
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 5
+Enter Event ID: 10
+Enter Student ID: 7
+
+[OUTPUT]
+[X] REGISTRATION REJECTED: Registration Failed: Event 'Full Mini-Hackathon' is completely full (Capacity limit: 2 seats reached).
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 6: [ADMIN] RECORDING ATTENDANCE
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 7
+Enter Registration ID: 41
+Enter Status (PRESENT / ABSENT): PRESENT
+
+[OUTPUT]
+[+] Attendance marked as [PRESENT] for Registration ID: 41
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 7: [STUDENT] SUBMITTING POST-EVENT FEEDBACK
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 8
+Enter Registration ID: 41
+Enter Rating (1 to 5 Stars): 5
+Enter Feedback Comments: Superb hands-on experience interfacing sensors with ESP32!
+
+[OUTPUT]
+[+] Feedback submitted successfully. Thank you!
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 8: [REPORT] EVENT PARTICIPATION & ENGAGEMENT SUMMARY
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 9
+
+[OUTPUT]
+=========================================================================================================
+                         COLLEGE EVENT PARTICIPATION & ENGAGEMENT SUMMARY REPORT                         
+=========================================================================================================
+ID   | Event Name                             | Category   | Capacity | Confirmed | Capacity% | Attended  | Avg ★ 
+---------------------------------------------------------------------------------------------------------
+1    | CYBERFEST 2026: National Tech Symposiu | Symposium  | 120      | 9         | 7.5%    | 7        | 4.29  
+2    | Hands-on Workshop on Generative AI & L | Workshop   | 45       | 6         | 13.3%   | 6        | 4.67  
+3    | National Seminar on Cloud & Distribute | Seminar    | 60       | 5         | 8.3%    | 4        | 3.75  
+4    | VIBES 2026: Annual Cultural Fest       | Cultural   | 250      | 9         | 3.6%    | 8        | 4.63  
+5    | Embedded IoT & Robotics Workshop       | Workshop   | 35       | 4         | 11.4%   | 1        | 5.00  
+6    | Deep Learning Bootcamp for Computer Vi | Workshop   | 40       | 5         | 12.5%   | 0        | N/A   
+7    | TechConclave 2027: Paper Presentation  | Symposium  | 50       | 0         | 0.0%    | 0        | N/A   
+8    | Rhythm & Beats: Music and Fine Arts Ev | Cultural   | 300      | 0         | 0.0%    | 0        | N/A   
+=========================================================================================================
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 9: [REPORT] DEPARTMENT-WISE PARTICIPATION BREAKDOWN
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 10
+
+[OUTPUT]
+======================================================================
+               DEPARTMENT-WISE STUDENT PARTICIPATION                 
+======================================================================
+Department Name                     | Total Registrations
+----------------------------------------------------------------------
+Information Technology              | 18 registrations
+Computer Science and Engg           | 6 registrations
+Electronics and Comm Engg           | 5 registrations
+Artificial Intelligence & DS        | 5 registrations
+Mechanical Engineering              | 3 registrations
+======================================================================
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 10: [STUDENT DOSSIER] INDIVIDUAL PROFILE FOR REG NO: 31
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 11
+Enter Student Register Number: 25IT031
+
+[OUTPUT]
+================================================================================
+STUDENT PARTICIPATION DOSSIER: Madhavan S (Reg 31) (25IT031)
+Department: Information Technology | Email: madhavan.25it031@velalarengg.ac.in
+================================================================================
+Reg ID   | Event Name                          | Status       | Attendance | Feedback
+--------------------------------------------------------------------------------
+1        | CYBERFEST 2026: National Tech Sym...| CONFIRMED    | PRESENT    | 5★ (Outstanding national symposium! Coding hackathon was top notch.)
+10       | Hands-on Workshop on Generative A...| CONFIRMED    | PRESENT    | 5★ (Superb hands-on experience on LangChain and LLMs.)
+16       | National Seminar on Cloud & Distr...| CONFIRMED    | PRESENT    | 4★ (Great overview of AWS Cloud and Kubernetes.)
+21       | VIBES 2026: Annual Cultural Fest    | CONFIRMED    | PRESENT    | 5★ (Energetic cultural fest! Fantastic dance performances.)
+================================================================================
+
+---------------------------------------------------------------------------------------
+SAMPLE RUN 11: AUTOMATED SOFTWARE TESTING SUITE
+---------------------------------------------------------------------------------------
+[INPUT] Choice: 12
+
+[OUTPUT]
+=================================================================================
+                 STARTING AUTOMATED SOFTWARE TESTING SUITE                       
+ Course: 25ITT33 Software Engineering | Testing Student Reg No: 31               
+=================================================================================
+[PASS] TC-01: Admin creates event with valid parameters (ID: 12)
+[PASS] TC-02: System correctly rejected negative event capacity.
+[PASS] TC-03: Student registered successfully (RegID: 42)
+[PASS] TC-04: System successfully blocked duplicate registration attempt.
+[PASS] TC-05: System strictly rejected registration when event is full.
+[PASS] TC-06: Cancellation successful and seat restored to available pool.
+[PASS] TC-07: Attendance marked as PRESENT successfully.
+[PASS] TC-08: Feedback rating 5/5 recorded successfully.
+[PASS] TC-09: Feedback blocked for absent student as expected.
+[PASS] TC-10: Test event cleaned up successfully.
+---------------------------------------------------------------------------------
+TEST RESULTS: 10 / 10 TEST CASES PASSED (100.0% SUCCESS RATE)
+=================================================================================
